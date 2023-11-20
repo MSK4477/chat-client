@@ -13,7 +13,6 @@ function App() {
   const [user] = UserHook()
   console.log(user?.message)
   const isLoggedIn = Boolean(user?.message)
-  console.log(isLoggedIn, "isLoggedIn")
  
   return (
     <>
