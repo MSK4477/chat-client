@@ -39,8 +39,7 @@ const scrollRef = useRef()
       socket.emit("send-message", messagePayload);
       setMessage("");
     }
-    // const  len  = messages.length -1
-// messages[len].scrollIntoView()
+
     scrollRef.current.scrollIntoView()
   }
 

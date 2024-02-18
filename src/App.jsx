@@ -16,7 +16,6 @@ function App() {
   return (
     <>
 <authContext.Provider value={{user}}>
-<ProtectedPage/>
     <Routes>
    <Route path="register" element = {<Register />} />
     <Route path="verify" element={<Verify />} />
@@ -30,8 +29,6 @@ function App() {
     </Routes>
       <Toaster />
 </authContext.Provider>
-
-    
     </>
   );
 }
